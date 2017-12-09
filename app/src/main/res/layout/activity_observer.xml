@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.crm.rxjava4android.ObserverActivity">
+
+
+            <Button
+                android:id="@+id/rxjava2_normal_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="RxJava2创建一个普通的观察者"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/just_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="just 订阅一个observer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rxjava2_normal_btn" />
+
+            <Button
+                android:id="@+id/form_array_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="form array 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/just_btn" />
+
+            <Button
+                android:id="@+id/form_iterator_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="form iterator 订阅一个Subscriber"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/form_array_btn" />
+
+            <Button
+                android:id="@+id/defer_observer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="defer 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/form_iterator_btn" />
+
+            <Button
+                android:id="@+id/interval_observer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="interval 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/defer_observer_btn" />
+
+
+            <Button
+                android:id="@+id/range_observer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="range 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interval_observer_btn" />
+
+            <Button
+                android:id="@+id/timer_observer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="timer 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/range_observer_btn" />
+
+            <Button
+                android:id="@+id/repeat_observer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="repeat 订阅一个Subscriber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timer_observer_btn" />
+
+            <Button
+                android:id="@+id/iamge_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="观察者显示图片实例"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repeat_observer_btn" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iamge_btn" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</layout>
